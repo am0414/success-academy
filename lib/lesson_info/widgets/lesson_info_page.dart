@@ -198,6 +198,28 @@ class ZoomInfo extends StatelessWidget {
               source: _ZoomInfoDataSource(context: context, data: zoomInfo),
             ),
           ),
+          InkWell(
+            onTap: () async {
+              if (!await launchUrl(
+                Uri.parse(
+                  'https://docs.google.com/document/d/1gJuGiJUm85nC0s5WUD_daaOz7JNz0dOQCCKuy2oHckw/edit?usp=sharing',
+                ),
+              )) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      backgroundColor: Theme.of(context).colorScheme.error,
+                      content: Text(S.of(context).openLinkFailure),
+                    ),
+                  );
+                }
+              }
+            },
+            child: Text(
+              S.of(context).lessonRules,
+              style: const TextStyle(color: Colors.blue),
+            ),
+          ),
         ],
       );
 }
@@ -229,7 +251,6 @@ class _ZoomInfoDataSource extends DataTableSource {
               child: const Text(
                 'Zoom',
                 style: TextStyle(
-                  decoration: TextDecoration.underline,
                   color: Colors.blue,
                 ),
               ),

@@ -158,6 +158,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "lessonInfoUpdateFailed":
             MessageLookupByLibrary.simpleMessage("Update failed"),
         "lessonInfoUpdated": MessageLookupByLibrary.simpleMessage("Updated"),
+        "lessonRules": MessageLookupByLibrary.simpleMessage(
+            "⭐️ Free Lesson Rules and Notes ⭐️"),
+        "lessonSignupWarning": MessageLookupByLibrary.simpleMessage(
+            "Please sign up at least 5 minutes before lesson start"),
         "link": MessageLookupByLibrary.simpleMessage("Link"),
         "managePayment":
             MessageLookupByLibrary.simpleMessage("Manage payment methods."),

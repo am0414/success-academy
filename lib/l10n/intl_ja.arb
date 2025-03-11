@@ -76,6 +76,8 @@
   "lessonInfo": "レッスン情報",
   "lessonInfoUpdateFailed": "更新に失敗しました",
   "lessonInfoUpdated": "更新しました",
+  "lessonRules": "⭐️ フリーレッスンのルールと注意点 ⭐️",
+  "lessonSignupWarning": "レッスン開始の5分前までに予約してください",
   "link": "リンク",
   "managePayment": "支払い方法管理",
   "manageProfile": "ユーザー管理",

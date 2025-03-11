@@ -366,6 +366,7 @@ class _CalendarHeaderState extends State<_CalendarHeader> {
                   .labelLarge!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
+            Text(S.of(context).lessonSignupWarning),
             Text(
               timeZone.replaceAll('_', ' '),
               style: Theme.of(context)

@@ -820,6 +820,26 @@ class S {
     );
   }
 
+  /// `⭐️ Free Lesson Rules and Notes ⭐️`
+  String get lessonRules {
+    return Intl.message(
+      '⭐️ Free Lesson Rules and Notes ⭐️',
+      name: 'lessonRules',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please sign up at least 5 minutes before lesson start`
+  String get lessonSignupWarning {
+    return Intl.message(
+      'Please sign up at least 5 minutes before lesson start',
+      name: 'lessonSignupWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Link`
   String get link {
     return Intl.message(

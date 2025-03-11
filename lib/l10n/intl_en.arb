@@ -76,6 +76,8 @@
   "lessonInfo": "Lesson Info",
   "lessonInfoUpdateFailed": "Update failed",
   "lessonInfoUpdated": "Updated",
+  "lessonRules": "⭐️ Free Lesson Rules and Notes ⭐️",
+  "lessonSignupWarning": "Please sign up at least 5 minutes before lesson start",
   "link": "Link",
   "managePayment": "Manage payment methods.",
   "manageProfile": "Manage Users",

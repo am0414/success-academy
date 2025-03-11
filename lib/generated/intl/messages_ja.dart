@@ -143,6 +143,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "lessonInfoUpdateFailed":
             MessageLookupByLibrary.simpleMessage("更新に失敗しました"),
         "lessonInfoUpdated": MessageLookupByLibrary.simpleMessage("更新しました"),
+        "lessonRules":
+            MessageLookupByLibrary.simpleMessage("⭐️ フリーレッスンのルールと注意点 ⭐️"),
+        "lessonSignupWarning":
+            MessageLookupByLibrary.simpleMessage("レッスン開始の5分前までに予約してください"),
         "link": MessageLookupByLibrary.simpleMessage("リンク"),
         "managePayment": MessageLookupByLibrary.simpleMessage("支払い方法管理"),
         "manageProfile": MessageLookupByLibrary.simpleMessage("ユーザー管理"),
