@@ -60,16 +60,6 @@ class S {
     );
   }
 
-  /// `Add english free lessons option - $40 USD/month`
-  String get addEnglishOption {
-    return Intl.message(
-      'Add english free lessons option - \$40 USD/month',
-      name: 'addEnglishOption',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Add subscription`
   String get addPlan {
     return Intl.message(
@@ -385,16 +375,6 @@ class S {
     return Intl.message(
       'Email',
       name: 'email',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `+ English free lessons option - $40 USD/month`
-  String get englishOption {
-    return Intl.message(
-      '+ English free lessons option - \$40 USD/month',
-      name: 'englishOption',
       desc: '',
       args: [],
     );
@@ -890,20 +870,20 @@ class S {
     );
   }
 
-  /// `Free Lesson - $40 USD/month`
+  /// `Free Lesson - $50 USD/month`
   String get minimumCourse {
     return Intl.message(
-      'Free Lesson - \$40 USD/month',
+      'Free Lesson - \$50 USD/month',
       name: 'minimumCourse',
       desc: '',
       args: [],
     );
   }
 
-  /// `Free Lesson + Preschool Class - $50 USD/month`
+  /// `Free Lesson + Preschool Class - $60 USD/month`
   String get minimumPreschoolCourse {
     return Intl.message(
-      'Free Lesson + Preschool Class - \$50 USD/month',
+      'Free Lesson + Preschool Class - \$60 USD/month',
       name: 'minimumPreschoolCourse',
       desc: '',
       args: [],
@@ -935,16 +915,6 @@ class S {
     return Intl.message(
       'My Lessons',
       name: 'myEvents',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Does not include english free lessons option.`
-  String get noEnglishOption {
-    return Intl.message(
-      'Does not include english free lessons option.',
-      name: 'noEnglishOption',
       desc: '',
       args: [],
     );
@@ -1595,16 +1565,6 @@ class S {
     return Intl.message(
       'View Profile',
       name: 'viewProfile',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `includes english free lessons option - $40 USD/month`
-  String get withEnglishOption {
-    return Intl.message(
-      'includes english free lessons option - \$40 USD/month',
-      name: 'withEnglishOption',
       desc: '',
       args: [],
     );

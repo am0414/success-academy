@@ -16,14 +16,14 @@ class PointTransactionModel {
     required this.totalAmount,
   }) : timestamp = Timestamp.now();
 
-  PointTransactionModel.fromJson(Map<String, dynamic> json)
+  PointTransactionModel.fromFirestore(Map<String, dynamic> json)
       : timestamp = json['timestamp'],
         type = PointTransactionType.values
             .firstWhere((type) => type.name == json['type']),
         amount = json['amount'],
         totalAmount = json['total_amount'];
 
-  Map<String, Object?> toJson() => {
+  Map<String, Object?> toFirestore() => {
         'timestamp': timestamp,
         'type': type.name,
         'amount': amount,

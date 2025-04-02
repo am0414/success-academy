@@ -40,8 +40,6 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "accountUpdated":
             MessageLookupByLibrary.simpleMessage("アカウント設定を更新しました"),
-        "addEnglishOption":
-            MessageLookupByLibrary.simpleMessage("英語版フリーレッスンオプションを追加する・月40米ドル"),
         "addPlan": MessageLookupByLibrary.simpleMessage("サブスクリプションを追加"),
         "addPoints": MessageLookupByLibrary.simpleMessage("ポイントを追加する"),
         "admin": MessageLookupByLibrary.simpleMessage("アドミン"),
@@ -83,8 +81,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("レッスンの編集ができませんでした"),
         "editEventSuccess": MessageLookupByLibrary.simpleMessage("レッスンを編集しました"),
         "email": MessageLookupByLibrary.simpleMessage("メアド"),
-        "englishOption":
-            MessageLookupByLibrary.simpleMessage("+英語版フリーレッスンオプション・月40米ドル"),
         "eventDescriptionLabel": MessageLookupByLibrary.simpleMessage("説明"),
         "eventDescriptionValidation":
             MessageLookupByLibrary.simpleMessage("レッスンの説明を入力してください"),
@@ -153,15 +149,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "manageSubscription":
             MessageLookupByLibrary.simpleMessage("サブスクリプション管理"),
         "meetingId": MessageLookupByLibrary.simpleMessage("ミーテイングID"),
-        "minimumCourse": MessageLookupByLibrary.simpleMessage("フリーレッスン・月40米ドル"),
+        "minimumCourse": MessageLookupByLibrary.simpleMessage("フリーレッスン・月50米ドル"),
         "minimumPreschoolCourse":
-            MessageLookupByLibrary.simpleMessage("フリーレッスン+未就学児クラス・月50米ドル"),
+            MessageLookupByLibrary.simpleMessage("フリーレッスン+未就学児クラス・月60米ドル"),
         "monthlyCourse":
             MessageLookupByLibrary.simpleMessage("月会費のみ・月10米ドル (個別レッスンのみ)"),
         "myCode": MessageLookupByLibrary.simpleMessage("紹介コード"),
         "myEvents": MessageLookupByLibrary.simpleMessage("マイレッスン"),
-        "noEnglishOption":
-            MessageLookupByLibrary.simpleMessage("英語版フリーレッスンオプションなし"),
         "noPlan": MessageLookupByLibrary.simpleMessage("サブスクリプションがありません"),
         "noPointSubscription":
             MessageLookupByLibrary.simpleMessage("ポイントサブスクリプションなし"),
@@ -243,8 +237,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "verifyEmailAction": MessageLookupByLibrary.simpleMessage(
             "登録を続けるには確認リンクをクリックしてください。受信トレイにメールがない場合は迷惑メールかゴミ箱に入ってる可能性があるのでご確認ください。"),
         "verifyEmailMessage": m7,
-        "viewProfile": MessageLookupByLibrary.simpleMessage("プロフィールを見る"),
-        "withEnglishOption":
-            MessageLookupByLibrary.simpleMessage("英語版フリーレッスンあり・月40米ドル")
+        "viewProfile": MessageLookupByLibrary.simpleMessage("プロフィールを見る")
       };
 }

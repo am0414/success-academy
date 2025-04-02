@@ -42,8 +42,6 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "accountUpdated":
             MessageLookupByLibrary.simpleMessage("Account settings updated"),
-        "addEnglishOption": MessageLookupByLibrary.simpleMessage(
-            "Add english free lessons option - \$40 USD/month"),
         "addPlan": MessageLookupByLibrary.simpleMessage("Add subscription"),
         "addPoints": MessageLookupByLibrary.simpleMessage("Add points"),
         "admin": MessageLookupByLibrary.simpleMessage("ADMIN"),
@@ -89,8 +87,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "editEventSuccess":
             MessageLookupByLibrary.simpleMessage("Edited lesson"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
-        "englishOption": MessageLookupByLibrary.simpleMessage(
-            "+ English free lessons option - \$40 USD/month"),
         "eventDescriptionLabel":
             MessageLookupByLibrary.simpleMessage("Description"),
         "eventDescriptionValidation": MessageLookupByLibrary.simpleMessage(
@@ -170,15 +166,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Manage Subscriptions"),
         "meetingId": MessageLookupByLibrary.simpleMessage("Meeting ID"),
         "minimumCourse": MessageLookupByLibrary.simpleMessage(
-            "Free Lesson - \$40 USD/month"),
+            "Free Lesson - \$50 USD/month"),
         "minimumPreschoolCourse": MessageLookupByLibrary.simpleMessage(
-            "Free Lesson + Preschool Class - \$50 USD/month"),
+            "Free Lesson + Preschool Class - \$60 USD/month"),
         "monthlyCourse": MessageLookupByLibrary.simpleMessage(
             "Monthly Payment - \$10 USD/month (Private Lesson Only)"),
         "myCode": MessageLookupByLibrary.simpleMessage("Referral Code"),
         "myEvents": MessageLookupByLibrary.simpleMessage("My Lessons"),
-        "noEnglishOption": MessageLookupByLibrary.simpleMessage(
-            "Does not include english free lessons option."),
         "noPlan": MessageLookupByLibrary.simpleMessage("No subscription plan"),
         "noPointSubscription":
             MessageLookupByLibrary.simpleMessage("No point subscription"),
@@ -273,8 +267,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "verifyEmailAction": MessageLookupByLibrary.simpleMessage(
             "Please click on the link in your email to continue the registration process. If you don\'t see a message in your inbox, please check your spam or junk mail folder."),
         "verifyEmailMessage": m7,
-        "viewProfile": MessageLookupByLibrary.simpleMessage("View Profile"),
-        "withEnglishOption": MessageLookupByLibrary.simpleMessage(
-            "includes english free lessons option - \$40 USD/month")
+        "viewProfile": MessageLookupByLibrary.simpleMessage("View Profile")
       };
 }

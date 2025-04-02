@@ -1,5 +1,5 @@
-import 'package:collection/collection.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:collection/collection.dart';
 import 'package:success_academy/points/data/point_transaction_model.dart';
 
 class PointTransactionDao {
@@ -17,8 +17,8 @@ class PointTransactionDao {
           .collection('point_transactions')
           .withConverter(
             fromFirestore: (doc, _) =>
-                PointTransactionModel.fromJson(doc.data()!),
-            toFirestore: (model, _) => model.toJson(),
+                PointTransactionModel.fromFirestore(doc.data()!),
+            toFirestore: (model, _) => model.toFirestore(),
           );
 
   Future<void> add({
@@ -35,8 +35,8 @@ class PointTransactionDao {
       (await _pointTransactionsRef(userId, studentProfileId).get())
           .docs
           .map(
-            (e) => e.data(),
+            (doc) => doc.data(),
           )
-          .sortedBy((e) => e.timestamp)
+          .sortedBy((data) => data.timestamp)
           .toList();
 }

@@ -1,6 +1,5 @@
 {
   "accountUpdated": "Account settings updated",
-  "addEnglishOption": "Add english free lessons option - $40 USD/month",
   "addPlan": "Add subscription",
   "addPoints": "Add points",
   "admin": "ADMIN",
@@ -33,7 +32,6 @@
   "editEventFailure": "Failed to edit lesson",
   "editEventSuccess": "Edited lesson",
   "email": "Email",
-  "englishOption": "+ English free lessons option - $40 USD/month",
   "eventDescriptionLabel": "Description",
   "eventDescriptionValidation": "Please enter lesson description",
   "eventEndLabel": "End",
@@ -83,12 +81,11 @@
   "manageProfile": "Manage Users",
   "manageSubscription": "Manage Subscriptions",
   "meetingId": "Meeting ID",
-  "minimumCourse": "Free Lesson - $40 USD/month",
-  "minimumPreschoolCourse": "Free Lesson + Preschool Class - $50 USD/month",
+  "minimumCourse": "Free Lesson - $50 USD/month",
+  "minimumPreschoolCourse": "Free Lesson + Preschool Class - $60 USD/month",
   "monthlyCourse": "Monthly Payment - $10 USD/month (Private Lesson Only)",
   "myCode": "Referral Code",
   "myEvents": "My Lessons",
-  "noEnglishOption": "Does not include english free lessons option.",
   "noPlan": "No subscription plan",
   "noPointSubscription": "No point subscription",
   "notEnoughPoints": "Not enough points. Please add more points",
@@ -153,6 +150,5 @@
   "usePoints": "{cost} of {balance} points will be used",
   "verifyEmailAction": "Please click on the link in your email to continue the registration process. If you don't see a message in your inbox, please check your spam or junk mail folder.",
   "verifyEmailMessage": "A verification link has been sent to your email at {address}",
-  "viewProfile": "View Profile",
-  "withEnglishOption": "includes english free lessons option - $40 USD/month"
+  "viewProfile": "View Profile"
 }
