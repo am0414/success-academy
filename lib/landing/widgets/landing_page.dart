@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:success_academy/account/data/account_model.dart';
 import 'package:success_academy/constants.dart' as constants;
-import 'package:success_academy/landing/widgets/sign_in_dialog.dart';
+import 'package:success_academy/landing/widgets/sign_in_form.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
