@@ -1,4 +1,4 @@
-const List<String> freeSignUpFeeCodes = ['TRYFREE', 'CRS50OFF'];
+const List<String> freeSignUpFeeCodes = ['TRYFREE'];
 const List<String> fiftyOffSignUpFeeCodes = ['SUCCESS50'];
 
 const String referralType20 = 'twenty';
