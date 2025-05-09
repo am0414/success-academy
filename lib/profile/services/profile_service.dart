@@ -84,8 +84,13 @@ Future<List<TeacherProfileModel>> getAllTeacherProfiles() async => (await _db
 Future<List<StudentProfileModel>> getStudentProfiles(
   List<String> studentProfileIds,
 ) async {
+  if (studentProfileIds.isEmpty) {
+    return [];
+  }
+
   final result = await _db
       .collectionGroup('student_profiles')
+      .where('id', whereIn: studentProfileIds)
       .withConverter<StudentProfileModel>(
         fromFirestore: (doc, _) => StudentProfileModel.fromFirestoreJson(
           doc.id,
@@ -94,10 +99,7 @@ Future<List<StudentProfileModel>> getStudentProfiles(
         toFirestore: (profileModel, _) => profileModel.toFirestoreJson(),
       )
       .get();
-  return result.docs
-      .where((e) => studentProfileIds.contains(e.id))
-      .map(((e) => e.data()))
-      .toList();
+  return result.docs.map(((e) => e.data())).toList();
 }
 
 /// Get all student profiles
