@@ -69,6 +69,7 @@ class StudentProfileModel {
   String get profileId => _profileId;
 
   Map<String, Object?> toFirestoreJson() => {
+        'id': _profileId,
         'email': email,
         'last_name': lastName,
         'first_name': firstName,

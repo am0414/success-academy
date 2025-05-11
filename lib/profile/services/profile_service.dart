@@ -145,6 +145,7 @@ Future<DocumentReference<StudentProfileModel>> addStudentProfile(
 ) async {
   final profileDoc =
       await _studentProfileModelRefForUser(userId).add(profileModel);
+  await profileDoc.update({'id': profileDoc.id});
   return profileDoc;
 }
 
