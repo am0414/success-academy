@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:success_academy/account/data/account_model.dart';
-import 'package:success_academy/account/services/user_service.dart'
-    as user_service;
+import 'package:success_academy/account/services/referral_code_service.dart'
+    as referral_code_service;
 import 'package:success_academy/constants.dart' as constants;
 import 'package:success_academy/generated/l10n.dart';
 import 'package:success_academy/helpers/subscription.dart';
@@ -33,7 +33,9 @@ class CreateSubscriptionForm extends StatefulWidget {
 }
 
 class _CreateSubscriptionFormState extends State<CreateSubscriptionForm> {
-  final List<String> _validCodes = ['SRNPUXON'];
+  final List<String> _freeReferralCodes = [];
+  final List<String> _fiftyOffReferralCodes = [];
+  final List<String> _twentyOffReferralCodes = [];
   String? _referralType;
   bool _invalidReferral = false;
   bool _termsOfUseChecked = false;
@@ -46,7 +48,12 @@ class _CreateSubscriptionFormState extends State<CreateSubscriptionForm> {
   }
 
   Future<void> _loadData() async {
-    _validCodes.addAll(await user_service.getReferralCodes());
+    _freeReferralCodes
+        .addAll(await referral_code_service.getFreeReferralCodes());
+    _fiftyOffReferralCodes
+        .addAll(await referral_code_service.getFiftyOffReferralCodes());
+    _twentyOffReferralCodes
+        .addAll(await referral_code_service.getTwentyOffReferralCodes());
   }
 
   @override
@@ -133,11 +140,11 @@ class _CreateSubscriptionFormState extends State<CreateSubscriptionForm> {
               ),
               onChanged: (value) {
                 setState(() {
-                  if (freeSignUpFeeCodes.contains(value)) {
+                  if (_freeReferralCodes.contains(value)) {
                     _referralType = referralTypeFree;
-                  } else if (fiftyOffSignUpFeeCodes.contains(value)) {
+                  } else if (_fiftyOffReferralCodes.contains(value)) {
                     _referralType = referralType50;
-                  } else if (_validCodes.contains(value) &&
+                  } else if (_twentyOffReferralCodes.contains(value) &&
                       account.myUser!.referralCode != value) {
                     _referralType = referralType20;
                   } else {
