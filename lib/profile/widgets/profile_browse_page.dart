@@ -109,34 +109,11 @@ class _ProfileBrowsePageState extends State<ProfileBrowsePage> {
                   children: [
                     for (final profile in _studentProfiles)
                       _buildProfileCard(context, profile),
-                    if (_studentProfiles.length < maxProfiles)
-                      const _AddProfileWidget(),
                   ],
                 ),
               ],
             ),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _AddProfileWidget extends StatelessWidget {
-  const _AddProfileWidget();
-
-  @override
-  Widget build(BuildContext context) {
-    return CircleAvatar(
-      radius: 100,
-      backgroundColor: Theme.of(context).colorScheme.secondary,
-      child: InkWell(
-        onTap: () {
-          Navigator.pushNamed(context, constants.routeCreateProfile);
-        },
-        child: const Icon(
-          Icons.add,
-          size: 50,
         ),
       ),
     );
