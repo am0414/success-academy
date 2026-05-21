@@ -15,7 +15,6 @@ import 'landing/widgets/email_verification_page.dart';
 import 'landing/widgets/landing_page.dart';
 import 'landing/widgets/terms_page.dart';
 import 'profile/widgets/profile_browse_page.dart';
-import 'profile/widgets/profile_create_page.dart';
 import 'scaffold/widgets/my_scaffold.dart';
 
 void main() async {
@@ -65,9 +64,22 @@ class App extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       home: const Root(),
-      routes: {
-        constants.routeInfo: (context) => const TermsPage(),
-        constants.routeCreateProfile: (context) => const ProfileCreatePage(),
+      onGenerateRoute: (settings) {
+        // Redirect signup route to top (registration disabled)
+        if (settings.name == constants.routeCreateProfile) {
+          return MaterialPageRoute(
+            builder: (context) => const Root(),
+            settings: const RouteSettings(name: '/'),
+          );
+        }
+        // Other named routes
+        if (settings.name == constants.routeInfo) {
+          return MaterialPageRoute(
+            builder: (context) => const TermsPage(),
+            settings: settings,
+          );
+        }
+        return null;
       },
     );
   }
